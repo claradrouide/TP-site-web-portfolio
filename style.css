@@ -11,7 +11,7 @@ a {
     color: inherit;
 }
 img {
-    max-width: 100%; /* ne dépasse jamais le conteneur */
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -33,8 +33,8 @@ header h1 {
     background-color: #ffd7ef;
 }
 .photo-container img {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -78,7 +78,6 @@ nav.menu ul li a:hover {
     flex: 2;
     min-width: 300px;
 }
-/* TABLEAU CV */
 #tableau-cv {
     width: 100%;
     border-collapse: collapse;
@@ -94,14 +93,14 @@ nav.menu ul li a:hover {
     text-transform: uppercase;
 }
 #tableau-cv .separation {
-    border-top: 2px solid #000; 
+    border-top: 2px solid #000;
 }
 #tableau-cv ul {
     padding-left: 20px;
 }
 .outils img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     margin-right: 10px;
 }
