@@ -8,36 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <!-- EN-TÊTE DU CV -->
-    <div style="
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 30px;
-    ">
-        <img src="photo.png"
-             alt="Photo de profil"
-             style="
-                width: 160px;
-                height: 160px;
-                object-fit: cover;
-                border-radius: 50%;
-             ">
-        <div>
-            <h1 style="margin: 0;">Clara Drouide</h1>
-            <p style="margin: 5px 0 0 0;">
-                Étudiante en communication & marketing
+<header id="header-cv" style="margin-bottom: 30px;">
+    <div style="display: flex; align-items: flex-start; gap: 20px;">
+        <div class="photo-container">
+            <img src="photo.png" alt="Photo de profil" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%;">
+        </div>
+        <div class="texte">
+            <h1 style="margin: 0; text-transform: uppercase;">CLARA DROUIDE</h1>
+            <p style="margin: 10px 0 0 0; max-width: 600px;">
+                Étudiante en Master communication d'influence en contexte international, parcours
+                Coréen à l'INALCO, je recherche un stage de 3 à 4 mois à partir d'avril. Passionnée par la culture coréenne, j'ai développé des compétences en communication
+                interculturelle à travers diverses expériences internationales. Intéressée par les marques de beauté, la création de contenu et le marketing d'influence, je suis motivée à rejoindre votre équipe avec créativité et engagement.
             </p>
         </div>
     </div>
-    <!-- HEADER -->
-    <header id="info">
-        <h1>CLARA DROUIDE</h1>
-    </header>
-    <!-- NAVIGATION -->
-    <nav class="menu" role="navigation" aria-label="Navigation principale">
-        <ul>
-            <li><a href="#info">Accueil</a></li>
+    <!-- MENU DE NAVIGATION -->
+    <nav class="menu" role="navigation" aria-label="Navigation principale" style="margin-top: 20px;">
+        <ul style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 0;">
+            <li><a href="#header-cv">Accueil</a></li>
             <li><a href="#apropos">À propos</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#diplomes">Diplômes</a></li>
@@ -47,20 +35,9 @@
             <li><a href="#experiencesprofessionnelles">Expériences professionnelles</a></li>
         </ul>
     </nav>
-<!-- À PROPOS -->
-<section class="apropos" id="apropos" aria-labelledby="apropos-title">
-    <div class="photo-container">
-        <img src="me.jpeg" alt="Photo de profil" />
-    </div>
-    <div class="texte">
-        <h2 id="apropos-title">À propos</h2>
-        <p>
-            Étudiante en Master communication d'influence en contexte international, parcours
-            Coréen à l'INALCO, je recherche un stage de 3 à 4 mois à partir d'avril. Passionnée par la culture coréenne, j'ai développé des compétences en communication
-            interculturelle à travers diverses expériences internationales. Intéressée par les marques de beauté, la création de contenu et le marketing d'influence, je suis motivée à rejoindre votre équipe avec créativité et engagement.
-        </p>
-    </div>
-</section>
+
+</header>
+
     <!-- EXPÉRIENCES PROFESSIONNELLES -->
 <section id="experiencesprofessionnelles" aria-labelledby="experiences-title">
     <h2 id="experiences-title">Expériences professionnelles</h2>
