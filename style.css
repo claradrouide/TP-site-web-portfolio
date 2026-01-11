@@ -1,31 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
+    padding: 20px;
+    background-color: #fff;
     color: #333;
-    margin: 20px;
-}
-h1 {
-    text-transform: uppercase;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-h2 {
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-p {
-    margin: 5px 0;
 }
 .header-top {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    margin-bottom: 20px;
 }
 .photo-container img {
     width: 160px;
@@ -33,26 +21,39 @@ p {
     object-fit: cover;
     border-radius: 50%;
 }
+.texte {
+    flex: 1;
+}
+.prenom-bg {
+    display: inline-block;
+    background-color: #ffd7ef;
+    padding: 5px 10px;
+}
+.presentation {
+    margin-top: 10px;
+}
 #contact {
+    margin-top: 20px;
     text-align: center;
     padding: 10px;
     background-color: #f2f2f2;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 .menu ul {
     display: flex;
     gap: 15px;
     list-style: none;
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 20px 0;
 }
-.menu ul li a {
+.menu li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
 }
-.main-container {
+.menu li a:hover {
+    color: #ff69b4;
+}
+.content {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -61,55 +62,50 @@ p {
     flex: 1;
     min-width: 300px;
 }
-
-.colonne-gauche table {
+#tableau-cv {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid #ccc;
+    background-color: #ffd7ef;
 }
-.colonne-gauche td {
+#tableau-cv td {
     padding: 10px;
     vertical-align: top;
 }
-.separation {
+#tableau-cv .separation {
     border-top: 2px solid #ccc;
-    height: 5px;
+    height: 1px;
 }
-.outils-numeriques {
+.outils {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin-top: 10px;
 }
-.outils-numeriques img {
+.outils img {
     width: 40px;
     height: 40px;
 }
 .langue {
     margin-bottom: 10px;
 }
-.barre {
+.barre-langue {
     background-color: #ddd;
     border-radius: 5px;
     height: 6px;
     width: 200px;
     margin-top: 3px;
 }
-.niveau {
-    background-color: #4CAF50;
+.barre-langue .niveau {
     height: 100%;
+    background-color: #4CAF50;
     border-radius: 5px;
 }
 .colonne-droite {
     flex: 2;
     min-width: 300px;
 }
-.experience article {
-    margin-bottom: 20px;
-}
-.year {
+.colonne-droite .date {
     font-style: italic;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 footer {
     text-align: center;
@@ -117,4 +113,9 @@ footer {
     background-color: #f2f2f2;
     border-radius: 10px;
     margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
 }
