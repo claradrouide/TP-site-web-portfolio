@@ -1,33 +1,36 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 body {
-    line-height: 1.5;
-    color: #333;
     background-color: #fff;
-#header-cv {
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+header#header-cv {
     margin-bottom: 30px;
 }
 .header-top {
     display: flex;
-    align-items: flex-start;
     gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-.photo-container img {
+header .photo-container img {
     width: 160px;
     height: 160px;
     object-fit: cover;
     border-radius: 50%;
 }
-.texte h1 {
+header .texte h1 {
     text-transform: uppercase;
     font-size: 28px;
     margin-bottom: 10px;
 }
-.texte p {
+header .texte p {
     max-width: 600px;
 }
 #contact {
@@ -38,13 +41,10 @@ body {
     border-radius: 10px;
 }
 #contact a {
-    color: #333;
     text-decoration: none;
+    color: #333;
 }
-#contact a:hover {
-    text-decoration: underline;
-}
-.menu ul {
+nav.menu ul {
     display: flex;
     gap: 15px;
     list-style: none;
@@ -52,17 +52,17 @@ body {
     margin: 20px 0;
     flex-wrap: wrap;
 }
-.menu ul li a {
+nav.menu ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     padding: 5px 10px;
-    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
-.menu ul li a:hover {
+nav.menu ul li a:hover {
     background-color: #4CAF50;
     color: #fff;
-    border-radius: 5px;
 }
 .main-container {
     display: flex;
@@ -87,11 +87,9 @@ body {
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 18px;
-    color: #4CAF50;
 }
-.separator {
+.separator td {
     border-top: 1px solid #ccc;
-    margin: 10px 0;
 }
 .outils-numeriques {
     display: flex;
@@ -101,7 +99,6 @@ body {
 }
 .outils-numeriques img {
     width: 40px;
-    height: 40px;
 }
 .langue {
     margin-bottom: 10px;
@@ -112,10 +109,11 @@ body {
     height: 6px;
     width: 200px;
     margin-top: 3px;
+    overflow: hidden;
 }
 .niveau-bar {
-    background-color: #4CAF50;
     height: 100%;
+    background-color: #4CAF50;
     border-radius: 5px;
 }
 .col-droite {
@@ -123,25 +121,24 @@ body {
     min-width: 300px;
 }
 .col-droite h2 {
-    font-size: 22px;
-    color: #4CAF50;
+    font-size: 20px;
     margin-bottom: 15px;
 }
-.col-droite .amani article {
+.amani article {
     margin-bottom: 20px;
 }
-.col-droite .amani h3 {
+.amani article h3 {
     font-size: 16px;
     margin-bottom: 5px;
 }
-.col-droite .amani .year {
-    font-size: 14px;
-    color: #777;
+.amani .year {
+    font-style: italic;
     margin-bottom: 5px;
+    color: #555;
 }
-.col-droite .amani ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.amani ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 footer {
     text-align: center;
@@ -150,23 +147,17 @@ footer {
     border-radius: 10px;
     margin-top: 30px;
 }
-
-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .main-container {
         flex-direction: column;
     }
     .col-gauche, .col-droite {
-        width: 100%;
+        min-width: 100%;
     }
-    .outils-numeriques {
-        justify-content: flex-start;
+}
+@media screen and (max-width: 500px) {
+    nav.menu ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
