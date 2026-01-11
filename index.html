@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="header-cv" style="margin-bottom: 30px;">
-    <div style="display: flex; align-items: flex-start; gap: 20px;">
+<header id="header-cv">
+    <div class="header-top">
         <div class="photo-container">
-            <img src="photo.png" alt="Photo de profil Clara Drouide" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%;">
+            <img src="photo.png" alt="Photo de profil Clara Drouide">
         </div>
         <div class="texte">
-            <h1 style="margin: 0; text-transform: uppercase;">CLARA DROUIDE</h1>
-            <p style="margin: 10px 0 0 0; max-width: 600px;">
+            <h1>CLARA DROUIDE</h1>
+            <p>
                 Étudiante en Master communication d'influence en contexte international, parcours
                 Coréen à l'INALCO, je recherche un stage de 3 à 4 mois à partir d'avril. Passionnée par la culture coréenne, j'ai développé des compétences en communication
                 interculturelle à travers diverses expériences internationales. Intéressée par les marques de beauté, la création de contenu et le marketing d'influence, je suis motivée à rejoindre votre équipe avec créativité et engagement.
             </p>
         </div>
     </div>
-    <section id="contact" style="margin-top: 20px; text-align: center; padding: 10px; background-color: #f2f2f2; border-radius: 10px;">
-        <p style="margin: 5px 0;">
+    <section id="contact">
+        <p>
             <strong>Email :</strong> <a href="mailto:claradrouide02@gmail.com">claradrouide02@gmail.com</a> |
             <strong>Téléphone :</strong> +33 06 75 11 56 80 |
             <strong>LinkedIn :</strong> <a href="https://fr.linkedin.com/in/clara-drouide-8306a9364" target="_blank">https://fr.linkedin.com/in/clara-drouide-8306a9364</a> |
@@ -31,9 +31,9 @@
         </p>
     </section>
 </header>
-<!-- MENU DE NAVIGATION -->
-<nav class="menu" role="navigation" aria-label="Navigation principale" style="margin-top: 20px;">
-    <ul style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 0;">
+
+<nav class="menu" role="navigation" aria-label="Navigation principale">
+    <ul>
         <li><a href="#header-cv">Accueil</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#diplomes">Diplômes</a></li>
@@ -44,37 +44,32 @@
     </ul>
 </nav>
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 50px;">
-    <!-- Colonne gauche : Tableau regroupant tout -->
-    <div style="flex: 1; min-width: 300px;">
-        <table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">
+<div class="main-container">
+    <!-- COLONNE GAUCHE : Tableau regroupant Diplômes, Compétences, Outils, Langues -->
+    <div class="col-gauche">
+        <table>
             <!-- Diplômes -->
             <tr>
-                <td style="padding: 10px; vertical-align: top;">
-                    <h2 style="text-transform: uppercase;">Diplômes</h2>
+                <td>
+                    <h2>Diplômes</h2>
                     <p><strong>M1 Master COCI – Parcours Coréen</strong> (2025)<br>
                     En cours d'obtention<br>
                     Paris 75013, Inalco</p>
-
                     <p><strong>LLCER Coréen – Communication et formations interculturelles</strong> (2025)<br>
                     Paris 75013, Inalco</p>
-
                     <p><strong>TOPIK 2 – Niveau 4</strong> (2024)<br>
                     Score : 150 / 300<br>
                     Paris 75013, Paris Cité</p>
-
                     <p><strong>Baccalauréat – Section générale, Mention Assez Bien</strong> (2021)<br>
                     Spécialités : Histoire des arts & HGGSP<br>
                     Cesson 77240, Lycée Sonia Delaunay</p>
                 </td>
             </tr>
-            <!-- Séparation -->
-            <tr><td style="border-top: 1px solid #ccc;"></td></tr>
-
+            <tr><td class="separator"></td></tr>
             <!-- Compétences clés -->
             <tr>
-                <td style="padding: 10px; vertical-align: top;">
-                    <h2 style="text-transform: uppercase;">Compétences clés</h2>
+                <td>
+                    <h2>Compétences clés</h2>
                     <ul>
                         <li>Compétences avancées en langue et culture coréennes</li>
                         <li>Maîtrise de la collecte des données, de l'analyse et de la gestion de projets multimédias</li>
@@ -83,55 +78,52 @@
                     </ul>
                 </td>
             </tr>
-            <!-- Séparation -->
-            <tr><td style="border-top: 1px solid #ccc;"></td></tr>
-
+            <tr><td class="separator"></td></tr>
             <!-- Maîtrise des outils numériques -->
             <tr>
-                <td style="padding: 10px; vertical-align: top;">
-                    <h2 style="text-transform: uppercase;">Maîtrise des outils numériques</h2>
-                    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
-                        <img src="excel.png" alt="Excel" width="40">
-                        <img src="powerpoint.png" alt="PowerPoint" width="40">
-                        <img src="adobe.png" alt="Adobe Illustrator" width="40">
-                        <img src="canva.png" alt="Canva" width="40">
-                        <img src="capcut.png" alt="CapCut" width="40">
-                        <img src="procreate.png" alt="Procreate" width="40">
+                <td>
+                    <h2>Maîtrise des outils numériques</h2>
+                    <div class="outils-numeriques">
+                        <img src="excel.png" alt="Excel">
+                        <img src="powerpoint.png" alt="PowerPoint">
+                        <img src="adobe.png" alt="Adobe Illustrator">
+                        <img src="canva.png" alt="Canva">
+                        <img src="capcut.png" alt="CapCut">
+                        <img src="procreate.png" alt="Procreate">
                     </div>
                 </td>
             </tr>
-            <!-- Séparation -->
-            <tr><td style="border-top: 1px solid #ccc;"></td></tr>
+            <tr><td class="separator"></td></tr>
             <!-- Langues -->
-<tr>
-    <td style="padding: 10px; vertical-align: top;">
-        <h2 style="text-transform: uppercase;">Langues</h2>
-        
-        <div style="margin-bottom: 10px;">
-            <strong>Français</strong> - Native
-            <div style="background-color: #ddd; border-radius: 5px; height: 6px; width: 200px; margin-top: 3px;">
-                <div style="width: 100%; height: 100%; background-color: #4CAF50; border-radius: 5px;"></div>
-            </div>
-        </div>
-        <div style="margin-bottom: 10px;">
-            <strong>Anglais</strong> - C1
-            <div style="background-color: #ddd; border-radius: 5px; height: 6px; width: 200px; margin-top: 3px;">
-                <div style="width: 85%; height: 100%; background-color: #4CAF50; border-radius: 5px;"></div>
-            </div>
-        </div>
-        <div style="margin-bottom: 10px;">
-            <strong>Coréen</strong> - B2
-            <div style="background-color: #ddd; border-radius: 5px; height: 6px; width: 200px; margin-top: 3px;">
-                <div style="width: 70%; height: 100%; background-color: #4CAF50; border-radius: 5px;"></div>
-            </div>
-        </div>
-
-    </td>
-</tr>
-    <!-- Colonne droite : Expériences professionnelles -->
-    <div style="flex: 2; min-width: 300px;">
-        <section id="experiencesprofessionnelles" aria-labelledby="experiences-title">
-            <h2 id="experiences-title">Expériences professionnelles</h2>
+            <tr>
+                <td>
+                    <h2>Langues</h2>
+                    <div class="langue">
+                        <strong>Français</strong> - Native
+                        <div class="niveau">
+                            <div class="niveau-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="langue">
+                        <strong>Anglais</strong> - C1
+                        <div class="niveau">
+                            <div class="niveau-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="langue">
+                        <strong>Coréen</strong> - B2
+                        <div class="niveau">
+                            <div class="niveau-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- COLONNE DROITE : Expériences professionnelles -->
+    <div class="col-droite">
+        <section id="experiencesprofessionnelles">
+            <h2>Expériences professionnelles</h2>
             <div class="amani">
                 <article>
                     <div class="info">
@@ -185,7 +177,8 @@
         </section>
     </div>
 </div>
-<footer style="text-align: center; padding: 20px; background-color: #f2f2f2; border-radius: 10px; margin-top: 30px;">
+
+<footer>
     <p>&copy; 2026 Clara Drouide - TP site web portfolio</p>
 </footer>
 </body>
