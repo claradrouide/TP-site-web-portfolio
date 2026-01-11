@@ -1,1 +1,172 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+#header-cv {
+    margin-bottom: 30px;
+}
+.header-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.photo-container img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.texte h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.texte p {
+    max-width: 600px;
+}
+#contact {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+.menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+.menu ul li a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+}
+.main-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.col-gauche {
+    flex: 1;
+    min-width: 300px;
+}
+.col-gauche table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+.col-gauche td {
+    padding: 10px;
+    vertical-align: top;
+}
+.col-gauche h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+.outils-numeriques {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.outils-numeriques img {
+    width: 40px;
+    height: 40px;
+}
+.langue {
+    margin-bottom: 10px;
+}
+.niveau {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 6px;
+    width: 200px;
+    margin-top: 3px;
+}
+.niveau-bar {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+}
+.col-droite {
+    flex: 2;
+    min-width: 300px;
+}
+.col-droite h2 {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+.col-droite .amani article {
+    margin-bottom: 20px;
+}
+.col-droite .amani h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.col-droite .amani .year {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+.col-droite .amani ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 30px;
+}
 
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .col-gauche, .col-droite {
+        width: 100%;
+    }
+    .outils-numeriques {
+        justify-content: flex-start;
+    }
+}
