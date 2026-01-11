@@ -9,20 +9,22 @@
 </head>
 <body>
 <header id="header-cv">
-    <div style="display: flex; align-items: flex-start; gap: 20px;">
+    <div class="header-top">
         <div class="photo-container">
             <img src="photo.png" alt="Photo de profil Clara Drouide">
         </div>
         <div class="texte">
-            <h1>CLARA DROUIDE</h1>
-            <p>Étudiante en Master communication d'influence en contexte international, parcours Coréen à l'INALCO, je recherche un stage de 3 à 4 mois à partir d'avril. Passionnée par la culture coréenne, j'ai développé des compétences en communication interculturelle à travers diverses expériences internationales. Intéressée par les marques de beauté, la création de contenu et le marketing d'influence, je suis motivée à rejoindre votre équipe avec créativité et engagement.</p>
+            <h1 class="prenom-bg">CLARA DROUIDE</h1>
+            <p class="presentation">
+                Étudiante en Master communication d'influence en contexte international, parcours Coréen à l'INALCO, je recherche un stage de 3 à 4 mois à partir d'avril. Passionnée par la culture coréenne, j'ai développé des compétences en communication interculturelle à travers diverses expériences internationales. Intéressée par les marques de beauté, la création de contenu et le marketing d'influence, je suis motivée à rejoindre votre équipe avec créativité et engagement.
+            </p>
         </div>
     </div>
     <section id="contact">
         <p>
             <strong>Email :</strong> <a href="mailto:claradrouide02@gmail.com">claradrouide02@gmail.com</a> |
             <strong>Téléphone :</strong> +33 06 75 11 56 80 |
-            <strong>LinkedIn :</strong> <a href="https://fr.linkedin.com/in/clara-drouide-8306a9364" target="_blank">profil LinkedIn</a> |
+            <strong>LinkedIn :</strong> <a href="https://fr.linkedin.com/in/clara-drouide-8306a9364" target="_blank">LinkedIn</a> |
             <strong>Adresse :</strong> Paris 75013
         </p>
     </section>
@@ -32,12 +34,13 @@
         <li><a href="#header-cv">Accueil</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#tableau-cv">CV</a></li>
-        <li><a href="#experiencesprofessionnelles">Expériences professionnelles</a></li>
+        <li><a href="#experiencesprofessionnelles">Expériences</a></li>
     </ul>
 </nav>
-<div class="main-container">
-    <!-- Colonne gauche -->
-    <div style="flex: 1; min-width: 300px;">
+
+<div class="content">
+    <!-- Colonne gauche : Tableau CV -->
+    <div class="colonne-gauche">
         <table id="tableau-cv">
             <!-- Diplômes -->
             <tr>
@@ -49,72 +52,108 @@
                     <p><strong>Baccalauréat – Section générale, Mention Assez Bien</strong> (2021)<br>Spécialités : Histoire des arts & HGGSP<br>Cesson 77240, Lycée Sonia Delaunay</p>
                 </td>
             </tr>
+            <!-- Séparation -->
+            <tr><td class="separation"></td></tr>
+
             <!-- Compétences clés -->
-            <tr><td></td></tr>
             <tr>
                 <td>
                     <h2>Compétences clés</h2>
                     <ul>
                         <li>Compétences avancées en langue et culture coréennes</li>
                         <li>Maîtrise de la collecte des données, de l'analyse et de la gestion de projets multimédias</li>
-                        <li>Expérience dans la planification et la gestion de projets internationaux et interculturels</li>
-                        <li>Expérience pratique en communication organisationnelle et digitale</li>
+                        <li>Expérience dans la planification ainsi que la gestion de projets internationaux et interculturels</li>
+                        <li>Expérience pratique en communication organisationnelle et digitale (branding, réseaux sociaux, campagnes)</li>
                     </ul>
                 </td>
             </tr>
-            <!-- Maîtrise des outils -->
-            <tr><td></td></tr>
+            <!-- Séparation -->
+            <tr><td class="separation"></td></tr>
+            <!-- Maîtrise des outils numériques -->
             <tr>
                 <td>
                     <h2>Maîtrise des outils numériques</h2>
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <img src="excel.png" alt="Excel" width="40">
-                        <img src="powerpoint.png" alt="PowerPoint" width="40">
-                        <img src="adobe.png" alt="Adobe Illustrator" width="40">
-                        <img src="canva.png" alt="Canva" width="40">
-                        <img src="capcut.png" alt="CapCut" width="40">
-                        <img src="procreate.png" alt="Procreate" width="40">
+                    <div class="outils">
+                        <img src="excel.png" alt="Excel">
+                        <img src="powerpoint.png" alt="PowerPoint">
+                        <img src="adobe.png" alt="Adobe Illustrator">
+                        <img src="canva.png" alt="Canva">
+                        <img src="capcut.png" alt="CapCut">
+                        <img src="procreate.png" alt="Procreate">
                     </div>
                 </td>
             </tr>
+            <!-- Séparation -->
+            <tr><td class="separation"></td></tr>
             <!-- Langues -->
-            <tr><td></td></tr>
             <tr>
                 <td>
                     <h2>Langues</h2>
-                    <p><strong>Français</strong> - Native</p>
-                    <div class="barre-langue"><div style="width:100%"></div></div>
-                    <p><strong>Anglais</strong> - C1</p>
-                    <div class="barre-langue"><div style="width:85%"></div></div>
-                    <p><strong>Coréen</strong> - B2</p>
-                    <div class="barre-langue"><div style="width:70%"></div></div>
+                    <div class="langue">
+                        <strong>Français</strong> - Native
+                        <div class="barre-langue"><div class="niveau" style="width:100%"></div></div>
+                    </div>
+                    <div class="langue">
+                        <strong>Anglais</strong> - C1
+                        <div class="barre-langue"><div class="niveau" style="width:85%"></div></div>
+                    </div>
+                    <div class="langue">
+                        <strong>Coréen</strong> - B2
+                        <div class="barre-langue"><div class="niveau" style="width:70%"></div></div>
+                    </div>
                 </td>
             </tr>
         </table>
     </div>
-    <!-- Colonne droite -->
-    <div id="experiencesprofessionnelles" style="flex: 2; min-width: 300px;">
-        <h2>Expériences professionnelles</h2>
-        <div class="amani">
+    <!-- Colonne droite : Expériences professionnelles -->
+    <div class="colonne-droite">
+        <section id="experiencesprofessionnelles">
+            <h2>Expériences professionnelles</h2>
+
             <article>
-                <h3>Chargée de médiation culturelle – Théâtre Taïwanais, INALCO</h3>
-                <p class="year">(Février - Avril 2025)</p>
+                <h3>Chargée de médiation culturelle et communication – Théâtre Taïwanais, INALCO, Paris 75013</h3>
+                <p class="date">(FÉVRIER - AVRIL 2025)</p>
                 <ul>
-                    <li>Création de contenus digitaux pour promouvoir l'événement.</li>
-                    <li>Préparation et conceptualisation de l'événement.</li>
-                    <li>Accueil des visiteurs avec communication adaptée.</li>
+                    <li>Création de contenus digitaux (publications, stories, vidéos) pour promouvoir l'événement et engager le public.</li>
+                    <li>Conceptualisation et préparation de l'événement.</li>
+                    <li>Accueil et accompagnement des visiteurs avec communication adaptée à leurs profils et attentes.</li>
+                    <li>Conceptualisation de supports pédagogiques et visuels pour faciliter la compréhension et l'expérience des visiteurs.</li>
                 </ul>
             </article>
+
             <article>
-                <h3>Community Manager – Friperie Bhumi</h3>
-                <p class="year">(Juin - Juillet 2024)</p>
+                <h3>Chargée de projet commercial – Colloque Taïwanais, INALCO, Paris 75013</h3>
+                <p class="date">(MARS - AVRIL 2025)</p>
                 <ul>
-                    <li>Création de contenus et campagnes marketing.</li>
-                    <li>Gestion du site web et promotions.</li>
-                    <li>Collaboration avec influenceurs et organisations.</li>
+                    <li>Création et pitch d'une production commerciale devant des start-ups internationales, valorisant les opportunités commerciales.</li>
+                    <li>Échange avec les participants et retours sur la commercialisation.</li>
+                    <li>Analyse des stratégies de communication et marketing pour valoriser le projet.</li>
+                    <li>Élaboration de projets visuels.</li>
                 </ul>
             </article>
-        </div>
+
+            <article>
+                <h3>Community Manager – Friperie Bhumi, Centre Commercial Val d'Yerres, 91800</h3>
+                <p class="date">(JUIN - JUILLET 2024)</p>
+                <ul>
+                    <li>Création de contenus pour les réseaux sociaux et campagnes marketing.</li>
+                    <li>Gestion de mise à jour du site web, promotion des nouveaux produits.</li>
+                    <li>Recherche et mise en place de collaborations avec influenceurs, écoles et organisations pour accroître la visibilité de l'entreprise.</li>
+                    <li>Sélection des articles et coordination des shootings photo pour le site web.</li>
+                    <li>Veille et analyse des tendances pour adapter les contenus ainsi que les stratégies marketing.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Tutrice de coréen – Niveau débutant, Paris, Cesson 77240</h3>
+                <p class="date">(SEPTEMBRE - DÉCEMBRE 2023)</p>
+                <ul>
+                    <li>Préparation de cours personnalisés en ligne ou présentiel, adaptés au niveau et aux besoins de chaque élève.</li>
+                    <li>Utilisation d'outils numériques pour organiser les cours et proposer des supports interactifs.</li>
+                    <li>Évaluation régulière des progrès et ajustement des méthodes pédagogiques selon les objectifs de chaque élève.</li>
+                </ul>
+            </article>
+        </section>
     </div>
 </div>
 <footer>
