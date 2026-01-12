@@ -111,6 +111,7 @@ nav.menu ul li a:hover {
 #tableau-cv {
     width: 100%;
     border-collapse: collapse;
+     background-color: #ffd7ef; /* <-- fond rose ici */
 }
 
 #tableau-cv td {
