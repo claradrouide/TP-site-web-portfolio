@@ -1,4 +1,3 @@
-/* ===== STYLE GLOBAL ===== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,23 +6,18 @@ body {
     background-color: #fff;
     color: #333;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 img {
     max-width: 100%;
     display: block;
 }
-
-/* ===== HEADER ===== */
 header {
     padding: 30px;
     background-color: #f9f9f9;
 }
-
 .header-top {
     display: flex;          /* Flex pour aligner texte et photo */
     justify-content: space-between;
@@ -44,26 +38,21 @@ header h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
 }
-
 .presentation {
     font-size: 1.1em;
     margin-top: 10px;
 }
-
 .photo-container {
     flex: 1;
     display: flex;
     justify-content: flex-end; /* photo à droite */
 }
-
 .photo-container img {
     width: 200px;   /* taille plus grande */
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
-
-/* ===== CONTACT ===== */
 #contact {
     text-align: center;
     padding: 15px;
@@ -72,8 +61,6 @@ header h1 {
     margin-top: 20px;
     font-size: 1em;
 }
-
-/* ===== MENU ===== */
 nav.menu ul {
     display: flex;
     gap: 20px;
@@ -83,47 +70,37 @@ nav.menu ul {
     justify-content: center;
     font-size: 1.05em;
 }
-
 nav.menu ul li a {
     padding: 7px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
 nav.menu ul li a:hover {
     background-color: #ffd7ef;
 }
-
-/* ===== CONTENU PRINCIPAL ===== */
 .content {
     display: flex;
     gap: 30px;
     margin: 30px;
     flex-wrap: wrap;
 }
-
 .colonne-gauche {
     flex: 1;
     min-width: 300px;
 }
-
 .colonne-droite {
     flex: 2;
     min-width: 300px;
 }
-
-/* ===== TABLEAU CV ===== */
 #tableau-cv {
     width: 100%;
     border-collapse: collapse;
 }
-
 #tableau-cv td {
     padding: 15px;
     vertical-align: top;
     background-color: #ffd7ef; /* 🔥 ROSE ICI, IMPOSSIBLE À RATER */
 }
-
 #tableau-cv h2 {
     text-align: center;
     margin-bottom: 12px;
@@ -134,32 +111,25 @@ nav.menu ul li a:hover {
 #tableau-cv .separation {
     border-top: 2px solid #000;
 }
-
 #tableau-cv ul {
     padding-left: 20px;
     font-size: 1em;
 }
-
-/* ===== OUTILS NUMÉRIQUES ===== */
 .outils {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
-
 .outils img {
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
-
-/* ===== LANGUES ===== */
 .langue {
     margin-bottom: 10px;
     font-size: 1em;
 }
-
 .barre-langue {
     background-color: #ddd;
     border-radius: 5px;
@@ -174,39 +144,30 @@ nav.menu ul li a:hover {
     background-color: #4CAF50;
     border-radius: 5px;
 }
-
-/* ===== EXPERIENCES PROFESSIONNELLES ===== */
 .colonne-droite h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
 }
-
 .amani article {
     margin-bottom: 25px;
 }
-
 .amani h3 {
     font-size: 1.2em;
     margin-bottom: 5px;
 }
-
 .date {
     font-style: italic;
     font-size: 0.95em;
 }
-
 .amani ul {
     font-size: 1em;
 }
-
-/* ===== CENTRE D'INTERET (VIDEO) ===== */
 #centre-interet {
     margin-top: 30px;
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 1.2em;
 }
-
 iframe {
     width: 100%;
     max-width: 560px; /* réduit la vidéo */
@@ -214,8 +175,6 @@ iframe {
     display: block;
     margin: 0 auto 30px auto;
 }
-
-/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 20px;
@@ -224,30 +183,24 @@ footer {
     margin-top: 30px;
     font-size: 0.95em;
 }
-
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .header-top {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .photo-container {
         justify-content: center;
         margin-top: 15px;
     }
-
     .content {
         flex-direction: column;
         margin: 20px;
     }
-
     nav.menu ul {
         flex-direction: column;
         gap: 10px;
     }
-
     iframe {
         max-width: 100%;
         height: auto;
