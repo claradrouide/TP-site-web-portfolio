@@ -23,29 +23,28 @@ header {
     padding: 20px 40px;
     position: relative;
 }
-
 header h1 {
     font-size: 2.5em;
     text-transform: uppercase;
     margin: 0 0 10px 0;
 }
 .header-top {
-    display: flex;
-    justify-content: space-between; /* texte à gauche, photo à droite */
-    align-items: center;
+    display: flex;          /* active le flex pour aligner les deux blocs */
+    justify-content: space-between; /* espace texte à gauche et photo à droite */
+    align-items: center;    /* aligne verticalement au centre */
     gap: 20px;
-    padding: 20px 0;
 }
-
 .texte {
-    flex: 1; /* prend tout l'espace possible pour le texte */
+    flex: 1;                /* prend tout l'espace disponible pour le texte */
 }
-
+.photo-container {
+    flex-shrink: 0;         /* empêche la photo de rétrécir */
+}
 .photo-container img {
-    width: 200px;  /* taille plus grande */
-    height: 200px;
+    width: 180px;           /* taille plus grande */
+    height: 180px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%;     /* cercle */
 }
 .presentation {
     margin-top: 10px;
