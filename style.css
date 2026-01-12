@@ -31,22 +31,19 @@ header h1 {
 }
 .header-top {
     display: flex;
-    justify-content: space-between; /* espace entre le texte et la photo */
+    justify-content: space-between; /* texte à gauche, photo à droite */
     align-items: center;
     gap: 20px;
+    padding: 20px 0;
 }
 
-.header-top .texte {
-    flex: 1; /* prend tout l’espace disponible à gauche */
-}
-
-.photo-container {
-    flex-shrink: 0; /* ne rétrécit pas la photo */
+.texte {
+    flex: 1; /* prend tout l'espace possible pour le texte */
 }
 
 .photo-container img {
-    width: 180px;  /* taille de la photo */
-    height: 180px;
+    width: 200px;  /* taille plus grande */
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
