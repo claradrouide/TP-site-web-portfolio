@@ -19,21 +19,20 @@ header {
     background-color: #f9f9f9;
 }
 .header-top {
-    display: flex;          /* Flex pour aligner texte et photo */
+    display: flex;          
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 header h1 {
-    display: inline-block;      /* OBLIGATOIRE pour que le fond s’adapte au texte */
-    background-color: #ffd7ef;  /* ton rose */
+    display: inline-block;      
+    background-color: #ffd7ef;  
     padding: 10px 20px;
-    border-radius: 6px;         /* optionnel */
+    border-radius: 6px;         
 }
 .texte {
     flex: 2;
 }
-
 .texte h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
@@ -45,10 +44,10 @@ header h1 {
 .photo-container {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* photo à droite */
+    justify-content: flex-end; 
 }
 .photo-container img {
-    width: 200px;   /* taille plus grande */
+    width: 200px;   
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
@@ -99,7 +98,7 @@ nav.menu ul li a:hover {
 #tableau-cv td {
     padding: 15px;
     vertical-align: top;
-    background-color: #ffd7ef; /* 🔥 ROSE ICI, IMPOSSIBLE À RATER */
+    background-color: #ffd7ef; 
 }
 #tableau-cv h2 {
     text-align: center;
@@ -170,7 +169,7 @@ nav.menu ul li a:hover {
 }
 iframe {
     width: 100%;
-    max-width: 560px; /* réduit la vidéo */
+    max-width: 560px; 
     height: 315px;
     display: block;
     margin: 0 auto 30px auto;
