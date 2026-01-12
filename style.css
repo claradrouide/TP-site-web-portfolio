@@ -111,12 +111,12 @@ nav.menu ul li a:hover {
 #tableau-cv {
     width: 100%;
     border-collapse: collapse;
-     background-color: #ffd7ef; /* <-- fond rose ici */
 }
 
 #tableau-cv td {
     padding: 15px;
     vertical-align: top;
+    background-color: #ffd7ef; /* 🔥 ROSE ICI, IMPOSSIBLE À RATER */
 }
 
 #tableau-cv h2 {
@@ -128,7 +128,6 @@ nav.menu ul li a:hover {
 
 #tableau-cv .separation {
     border-top: 2px solid #000;
-    margin: 10px 0;
 }
 
 #tableau-cv ul {
