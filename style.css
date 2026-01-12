@@ -30,7 +30,12 @@ header {
     align-items: center;
     gap: 20px;
 }
-
+header h1 {
+    display: inline-block;      /* OBLIGATOIRE pour que le fond s’adapte au texte */
+    background-color: #ffd7ef;  /* ton rose */
+    padding: 10px 20px;
+    border-radius: 6px;         /* optionnel */
+}
 .texte {
     flex: 2;
 }
